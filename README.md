@@ -1,6 +1,7 @@
 # Phaser 3 React Webpack Project Template
 
-Built from the [Phaser 3 Template by nodes777](https://github.com/nodes777/phaser3-react-template), this boilerplate gives you Phaser and React out of the box. Full details on [Integrating React and Phaser 3 Tutorial](https://medium.com/@Tnodes/integrating-react-and-phaser-3-tutorial-eb96717d4a9d).
+This template is a customized version of [Phaser 3 Template by nodes777](https://github.com/nodes777/phaser3-react-template), which I thank.
+This version has the main addition of **Typescript** support.
 
 ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/). Includes hot-reloading for development and production-ready builds.
 

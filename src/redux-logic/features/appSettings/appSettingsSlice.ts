@@ -13,7 +13,6 @@ const appSettingsSlice = createSlice({
     setSounds(state, action: PayloadAction<boolean>) {
         return {...state, soundsOn: action.payload};
     },
-
   }
 })
 

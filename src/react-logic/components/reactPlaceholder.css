@@ -1,8 +1,3 @@
-.app-root {
-    height: 100vh;
-    width: 100vw;
-}
-
 .react-parent {
     /* Using padding just to highlight the independency of the 2 hierarchies: canvas and div react root */
     padding: 5%;
@@ -11,12 +6,21 @@
     box-sizing: border-box;
 }
 
+.html-root-tag {
+    position: absolute;
+    font-size: 25px;
+}
+
 .react-content {
     /* Just some plceholder content */
     border: solid black;
     text-align: center;
-    background-color: rgba(155, 255, 255, 0.5);
     width: 100%;
     height: 100%;
-    font-size: 40px;
+    font-size: 30px;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
 }

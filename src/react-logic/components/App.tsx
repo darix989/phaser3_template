@@ -1,20 +1,19 @@
 import React from "react";
 import { Provider } from "react-redux";
 
-import store from "../redux-logic";
-import PhaserRoot from "../phaser/PhaserRoot";
+import store from "../../redux-logic";
+import PhaserRoot from "../../phaser/PhaserRoot";
 import ReactRoot from "./ReactRoot";
+import ReactPlaceholder from "./ReactPlaceholder";
 
 import './app.css';
 
-const App: React.FC = (props) => {
+const App: React.FC = () => {
 	return (
 		<Provider store={store}>
 			<div className="app-root">
 				<ReactRoot>
-					<div className="react-parent">
-						<div className="react-content">Hello World</div>
-					</div>
+					<ReactPlaceholder />
 				</ReactRoot>
 				<PhaserRoot />
 			</div>

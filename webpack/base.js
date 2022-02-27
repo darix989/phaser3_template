@@ -35,7 +35,7 @@ const config = {
         use: "raw-loader",
       },
       {
-        test: /\.(gif|png|jpe?g|svg|xml)$/i,
+        test: /\.(gif|png|jpe?g|svg|xml|mp3|wav|ogg)$/i,
         use: "file-loader",
       },
       {

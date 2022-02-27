@@ -1,17 +1,26 @@
 import React from "react";
-import PhaserRoot from "../phaser/PhaserRoot";
+import { Provider } from "react-redux";
 
-// Load phaser method #2 - uncomment PhaserRoot
-const App : React.FC = (props) => {
+import store from "../redux-logic";
+import PhaserRoot from "../phaser/PhaserRoot";
+import ReactRoot from "./ReactRoot";
+
+import './app.css';
+
+const App: React.FC = (props) => {
 	return (
-		<div>
-			<div style={{ textAlign: "center" }}>
-				<h1>Hello World</h1>
+		<Provider store={store}>
+			<div className="app-root">
+				<ReactRoot>
+					<div className="react-parent">
+						<div className="react-content">Hello World</div>
+					</div>
+				</ReactRoot>
+				<PhaserRoot />
 			</div>
-			<PhaserRoot />
-		</div>
+		</Provider>
 	);
-	
+
 }
 
 export default App;

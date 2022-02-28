@@ -14,16 +14,19 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"sourceMap": true,
-		"baseUrl": ".",
+		"baseUrl": "./src",
 		"paths": {
-			"*": [
-				"*",
-				"src/*"
+			"#/*": [
+				"./*"
+			],
+			"~*": [
+				"../*"
 			]
 		},
 		"typeRoots": [
 			"node_modules/@types",
-			"node_modules/phaser/types"
+			"node_modules/phaser/types",
+			"./src/**/*.d.ts"
 		],
 		"types": [
 			"phaser"
@@ -31,5 +34,9 @@
 	},
 	"include": [
 		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"build"
 	]
 }

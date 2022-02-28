@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const alias = require('./alias');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -22,6 +23,7 @@ const config = {
       path.resolve('./src')
     ],
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias
   },
   module: {
     rules: [

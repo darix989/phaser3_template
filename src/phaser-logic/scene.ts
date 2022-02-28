@@ -1,13 +1,13 @@
-import Phaser from "phaser";
+import Phaser from 'phaser';
 
 import store from '../redux-logic';
 import { setMusic } from '../redux-logic/features/appSettings/appSettingsSlice';
-import logoImg from "../assets/logo.png";
-import MusicOn from "../assets/Music_ON.png";
-import MusicOff from "../assets/Music_OFF.png";
+import logoImg from '#/assets/logo.png';
+import MusicOn from '#/assets/Music_ON.png';
+import MusicOff from '#/assets/Music_OFF.png';
 // This track is free to use (even for commercial purposes) with no attribution required. However, linking back is greatly appreciated. You can use the following text:
 // https://www.chosic.com/free-music/all/
-import riseShine from "../assets/rise-and-shine.mp3";
+import riseShine from '#/assets/rise-and-shine.mp3';
 
 class playGame extends Phaser.Scene {
   private musicButtonOn!: Phaser.GameObjects.Sprite;

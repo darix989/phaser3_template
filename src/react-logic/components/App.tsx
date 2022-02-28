@@ -1,10 +1,10 @@
 import React from "react";
 import { Provider } from "react-redux";
 
-import store from "../../redux-logic";
-import PhaserRoot from "../../phaser-logic/PhaserRoot";
-import ReactRoot from "./ReactRoot";
-import ReactPlaceholder from "./ReactPlaceholder";
+import store from '#/redux-logic';
+import PhaserRoot from '#/phaser-logic/PhaserRoot';
+import ReactRoot from './ReactRoot';
+import ReactPlaceholder from './ReactPlaceholder';
 
 import './app.css';
 

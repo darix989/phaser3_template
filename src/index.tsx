@@ -1,7 +1,6 @@
-import Phaser from "phaser";
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./react-logic/components/App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './react-logic/components/App';
 
 import './index.css';
 

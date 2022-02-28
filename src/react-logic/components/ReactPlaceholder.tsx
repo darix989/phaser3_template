@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { setMusic } from '../../redux-logic/features/appSettings/appSettingsSlice';
 import { useAppSelector, useAppDispatch } from '../hooks'
 

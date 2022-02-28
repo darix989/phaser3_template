@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect, useState, useRef } from "react";
-import { connect } from "react-redux";
+import React, { ReactNode, useEffect, useState, useRef } from 'react';
+import { connect } from 'react-redux';
 import './reactRoot.css';
 
 interface StatsUIProps {

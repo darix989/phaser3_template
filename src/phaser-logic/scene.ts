@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 
-import store from '../redux-logic';
-import { setMusic } from '../redux-logic/features/appSettings/appSettingsSlice';
+import store from '#/redux-logic';
+import { setMusic } from '#/redux-logic/features/appSettings/appSettingsSlice';
 import logoImg from '#/assets/logo.png';
 import MusicOn from '#/assets/Music_ON.png';
 import MusicOff from '#/assets/Music_OFF.png';

@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import Phaser from "phaser";
-import playGame from "./scene";
+import React, {useState, useEffect} from 'react';
+import Phaser from 'phaser';
+import playGame from './scene';
 
 const PhaserRoot = () => {
     // Component centralized reference to the phaser instance if needed.

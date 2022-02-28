@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import {AppSettingsData} from "../../../types";
+import {AppSettingsData} from "#/types";
 
 const initialState : AppSettingsData = {musicOn: true, soundsOn: true};
 

@@ -1,5 +1,5 @@
-import React from "react";
-import { Provider } from "react-redux";
+import React from 'react';
+import { Provider } from 'react-redux';
 
 import store from '#/redux-logic';
 import PhaserRoot from '#/phaser-logic/PhaserRoot';
@@ -19,7 +19,6 @@ const App: React.FC = () => {
 			</div>
 		</Provider>
 	);
-
 }
 
 export default App;

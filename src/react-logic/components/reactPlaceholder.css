@@ -24,3 +24,10 @@
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */  
 }
+
+.music-toggler {
+    height: 10vh;
+    width: 10vw;
+    border-radius: 15px;
+    font-size: 2vw;
+}

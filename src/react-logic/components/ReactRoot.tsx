@@ -1,5 +1,4 @@
 import React, { ReactNode, useEffect, useState, useRef } from 'react';
-import { connect } from 'react-redux';
 import './reactRoot.css';
 
 interface StatsUIProps {
@@ -38,8 +37,4 @@ export const ReactRoot: React.FC<StatsUIProps> = ({ children }) => {
   return <div className="react-root" ref={uiRootRef} style={rootStyle}>{children}</div>;
 };
 
-const mapStateToProps = (state /*, ownProps*/) => {
-  return { ...state };
-};
-
-export default connect(mapStateToProps)(ReactRoot);
+export default ReactRoot;

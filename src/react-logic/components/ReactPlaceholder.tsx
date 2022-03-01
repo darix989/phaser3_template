@@ -10,11 +10,12 @@ const ReactPlaceholder: React.FC = () => {
     return (
         <div className="react-parent">
             <div className="react-content">
-                <div className="html-root-tag">HTML Container (padding: 5%)</div>
-                <div>HTML Button</div>
+                <div className="html-root-tag">React Container (padding: 5%)</div>
+                <div>React Button</div>
                 <button
+                    className='music-toggler'
                     onClick={() => { dispatch(setMusic(!appSettings.musicOn)) }}
-                    style={{ height: "10vh", width: "10vw", borderRadius: "15px", fontSize: "2vw" }} >
+                >
                     {`Sound ${appSettings.musicOn ? 'On' : 'Off'}`}
                 </button>
             </div>

@@ -35,7 +35,7 @@ class playGame extends Phaser.Scene {
     this.musicButtonOn = this.add.sprite(centerW, 700, "sound-on").setInteractive();
     this.musicButtonOff = this.add.sprite(centerW, 700, "sound-off").setVisible(false);
 
-    this.musicButtonOn.on("pointerup", this.onMute, this);
+    this.musicButtonOn.on("pointerup", this.onMusicOff, this);
     this.musicButtonOff.on("pointerup", this.onMusicOn, this);
 
     this.bgMusic = this.game.sound.add("bgMusic") as Phaser.Sound.WebAudioSound;
@@ -60,10 +60,10 @@ class playGame extends Phaser.Scene {
     if(state.appSettings.musicOn && this.musicButtonOff.visible){
       this.onMusicOn();
     } else if(!state.appSettings.musicOn && this.musicButtonOn.visible){
-      this.onMute();
+      this.onMusicOff();
     }
   }
-  onMute() {
+  onMusicOff() {
     this.bgMusic.setVolume(0);
     this.musicButtonOn.setVisible(false);
     this.musicButtonOn.disableInteractive();
